@@ -13,6 +13,7 @@ const Cart = (props) => {
 
     
     const [brake, setBrake] = useState(0);
+    
     const brakeTime = () =>{
         let brake = 5;
         setBrake(brake);
@@ -55,7 +56,7 @@ const Cart = (props) => {
             <h2>Working Time</h2>
             <h3>Activity Time: {total} min </h3>
 
-            <h3>Brake Time: {brake}</h3>
+            <h3>Brake Time: {brake} min</h3>
             </div>
             <div>
             <button onClick={notify} className='btnActive'>Activity Done</button>
