@@ -1,5 +1,5 @@
 import './Cart.css'
-import React from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,14 +9,34 @@ const Cart = (props) => {
     for(const product of cart){
         total = total + product.time;
     }
-    
         const notify = () => toast("Wow Toastify part Done");
+
     
+    const [brake, setBrake] = useState(0);
+    const brakeTime = () =>{
+        let brake = 5;
+        setBrake(brake);
+    }
+    const brakeTime2 = () =>{
+        let brake = 3;
+        setBrake(brake);
+    }
+    const brakeTime3 = () =>{
+        let brake = 7;
+        setBrake(brake);
+    }
+    const brakeTime4 = () =>{
+        let brake = 2;
+        setBrake(brake);
+    }
+    
+
     return (
         <div>
             <div className='myInfo'>
+                
                 <h2>Mojammel Haque</h2>
-                <p>Daley workout time</p>
+                <p>Daley work time</p>
                 <div className='myDetects'>
                 <h3>Hight: 6 fit</h3>
                 <h3>weight: 66 kg </h3>
@@ -25,16 +45,17 @@ const Cart = (props) => {
             </div>
             <div className='brake'>
                 <h2>Add a Brake</h2>
-                <button>5 min</button>
-                <button>3 min</button>
-                <button>7 min</button>
-                <button>2 min</button>
+                <button onClick={brakeTime}>5 min</button>
+                <button onClick={brakeTime2}>3 min</button>
+                <button onClick={brakeTime3}>7 min</button>
+                <button onClick={brakeTime4}>2 min</button>
             
             </div>
             <div className='activity'>
             <h2>Working Time</h2>
             <h3>Activity Time: {total} min </h3>
-            <h3>Brake Time: 0</h3>
+
+            <h3>Brake Time: {brake}</h3>
             </div>
             <div>
             <button onClick={notify} className='btnActive'>Activity Done</button>
