@@ -14,17 +14,20 @@ const Body = () => {
         .then(res=> res.json())
         .then(data => setWorkouts(data))
     }, []);
+    const handleAddToCart = (product) =>{
+        console.log(product);
+    };
     return (
         <div className='body'>
             <div className="workout">
-                <h2>Daily Life Workout</h2>
+                <h2>Daily Life Working routing</h2>
                 <p>Select today Activities </p>
                 <div className='cart'>
                 {
                     workouts.map(product=><Product 
                             key={product.id}
-                            
                             product={product}
+                            handleAddToCart ={handleAddToCart}
                             ></Product>)
                 }
                 </div>

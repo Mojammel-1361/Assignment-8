@@ -16,3 +16,34 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+@media screen and (max-width: 1000px) {
+    .body{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cart{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .body{
+        grid-template-columns: 1fr 1fr;
+    }
+    .cart{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+    }
+    
+}
+@media screen and (max-width: 510px) {
+    .body{
+        grid-template-columns: 1fr;
+    }
+    .cart{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+    }
+    
+}
+
