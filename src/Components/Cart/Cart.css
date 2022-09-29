@@ -1,0 +1,31 @@
+.myInfo{
+    text-align: center;
+}
+.myDetects{
+    
+    justify-content: center;
+}
+.myDetects h3{
+    background-color: beige;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px;
+}
+.brake{
+    
+    margin-left: 30px;
+    
+}
+.brake button{
+    
+    margin-left: 20px;
+    width: 50px;
+    height: 30px;
+    background-color: beige;
+    border-radius: 30px;
+    margin: 5px;
+
+}
+
+.activity{
+    margin-left: 30px;
+}

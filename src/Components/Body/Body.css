@@ -11,18 +11,7 @@
     background-color: rgb(178, 225, 225);
     
 }
-.myInfo{
-    text-align: center;
-}
-.myDetects{
-    
-    justify-content: center;
-}
-.myDetects h3{
-    background-color: beige;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 5px;
-}
+
 
 
 .cart{
