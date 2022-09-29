@@ -1,7 +1,7 @@
 import './Cart.css'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
     const {cart} = props
@@ -11,8 +11,21 @@ const Cart = (props) => {
     }
         const notify = () => toast("Wow Toastify part Done");
 
+    const getLocalItems = () =>{
+        let list = localStorage.getItem('list');
+        if(list){
+            return JSON.parse(localStorage.getItem('list'));
+        }
+        else{
+            return 0;
+        }
+    }
+        const [brake, setBrake] = useState(getLocalItems());
+    useEffect(() => {
+        localStorage.setItem('list', JSON.stringify(brake))
+    }, [brake]);
     
-    const [brake, setBrake] = useState(0);
+    
     
     const brakeTime = () =>{
         let brake = 5;
