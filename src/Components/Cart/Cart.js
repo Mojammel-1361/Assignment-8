@@ -1,5 +1,7 @@
 import './Cart.css'
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
     const {cart} = props
@@ -7,6 +9,9 @@ const Cart = (props) => {
     for(const product of cart){
         total = total + product.time;
     }
+    
+        const notify = () => toast("Wow Toastify part Done");
+    
     return (
         <div>
             <div className='myInfo'>
@@ -30,8 +35,12 @@ const Cart = (props) => {
             <h2>Working Time</h2>
             <h3>Activity Time: {total} min </h3>
             <h3>Brake Time: 0</h3>
-            <p>time: {cart.length}</p>
             </div>
+            <div>
+            <button onClick={notify} className='btnActive'>Activity Done</button>
+            <ToastContainer />
+            </div>
+            
         </div>
     );
 };

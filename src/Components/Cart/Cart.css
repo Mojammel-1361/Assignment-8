@@ -29,3 +29,15 @@
 .activity{
     margin-left: 30px;
 }
+
+.btnActive{
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    background-color: rgb(176, 248, 176);
+    border: none;
+    border-radius: 20px;
+}
+.btnActive:hover{
+    background-color: rgb(21, 243, 21);
+}
