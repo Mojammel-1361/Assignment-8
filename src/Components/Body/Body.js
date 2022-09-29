@@ -3,6 +3,7 @@ import './Body.css'
 import React, { useEffect, useState } from 'react';
 
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 
 
 const Body = () => {
@@ -41,15 +42,7 @@ const Body = () => {
 
 
             <div className="profile">
-            <div className='myInfo'>
-                <h2>Mojammel Haque</h2>
-                <div className='myDetects'>
-                <h3>Hight: 6 fit</h3>
-                <h3>weight: 66 kg </h3>
-                <h3>age: 25</h3>
-                </div>
-            </div>
-            <p>time: {cart.length}</p>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     );
