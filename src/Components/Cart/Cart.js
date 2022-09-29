@@ -2,6 +2,7 @@ import './Cart.css'
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import img from '../img/my.png' 
 
 const Cart = (props) => {
     const {cart} = props
@@ -13,6 +14,7 @@ const Cart = (props) => {
 
     const getLocalItems = () =>{
         let list = localStorage.getItem('list');
+        
         if(list){
             return JSON.parse(localStorage.getItem('list'));
         }
@@ -21,13 +23,14 @@ const Cart = (props) => {
         }
     }
         const [brake, setBrake] = useState(getLocalItems());
+        
     useEffect(() => {
         localStorage.setItem('list', JSON.stringify(brake))
     }, [brake]);
     
     
     
-    const brakeTime = () =>{
+    const brakeTime1 = () =>{
         let brake = 5;
         setBrake(brake);
     }
@@ -49,8 +52,11 @@ const Cart = (props) => {
         <div>
             <div className='myInfo'>
                 
+                <div className=''>
+                    <img src={img} alt="" />
                 <h2>Mojammel Haque</h2>
-                <p>Daley work time</p>
+                </div>
+                <p>Every morning, look in the mirror and affirm positive words into your life...</p>
                 <div className='myDetects'>
                 <h3>Hight: 6 fit</h3>
                 <h3>weight: 66 kg </h3>
@@ -58,8 +64,8 @@ const Cart = (props) => {
                 </div>
             </div>
             <div className='brake'>
-                <h2>Add a Brake</h2>
-                <button onClick={brakeTime}>5 min</button>
+                <h2>Add A Brake</h2>
+                <button onClick={brakeTime1}>5 min</button>
                 <button onClick={brakeTime2}>3 min</button>
                 <button onClick={brakeTime3}>7 min</button>
                 <button onClick={brakeTime4}>2 min</button>

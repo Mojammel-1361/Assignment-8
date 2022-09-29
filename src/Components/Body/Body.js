@@ -26,7 +26,7 @@ const Body = () => {
     return (
         <div className='body'>
             <div className="workout">
-                <h2>Daily Life Working routing</h2>
+                <h2>Daily Life Routine</h2>
                 <p>Select today Activities </p>
                 <div className='cart'>
                 {

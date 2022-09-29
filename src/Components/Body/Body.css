@@ -8,6 +8,7 @@
     padding: 10px;
 }
 .profile{
+    padding-top: 50px;
     background-color: rgb(178, 225, 225);
     
 }
@@ -29,8 +30,8 @@
     .cart{
         grid-template-columns: repeat(2, 1fr);
         margin-left: 40px;
-    }
-    
+
+    } 
 }
 @media screen and (max-width: 800px) {
     .body{
@@ -48,7 +49,7 @@
     }
     .cart{
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 40px;
+        margin-left: 60px;
     }
     
 }

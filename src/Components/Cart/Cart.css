@@ -1,6 +1,9 @@
 .myInfo{
     text-align: center;
 }
+.myInfo img{
+    width: 100px;
+}
 .myDetects{
     
     justify-content: center;
