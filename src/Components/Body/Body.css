@@ -11,7 +11,10 @@
     background-color: rgb(178, 225, 225);
     
 }
-
+.question{
+    text-align: justify;
+  text-justify: inter-word;
+}
 
 
 .cart{

@@ -12,7 +12,7 @@ const Product = (props) => {
             <img src={picture} alt="" />
             <div className='cartInfo'>
             <h2> {name}</h2>
-            <h4> {time} min</h4>
+            <h4>Time: {time} min</h4>
             </div>
             <button onClick={() =>props.handleAddToCart(props.product)} className='btnCart'>
                 <p>Add to list</p>

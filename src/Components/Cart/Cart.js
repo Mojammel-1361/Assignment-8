@@ -25,10 +25,10 @@ const Cart = (props) => {
             </div>
             <div className='brake'>
                 <h2>Add a Brake</h2>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
-                <button>50s</button>
+                <button>5 min</button>
+                <button>3 min</button>
+                <button>7 min</button>
+                <button>2 min</button>
             
             </div>
             <div className='activity'>
