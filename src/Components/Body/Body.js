@@ -10,7 +10,7 @@ const Body = () => {
 
     const [workouts, setWorkouts] = useState([]);
     const [cart, setCart] = useState([]);
-    // console.log(workouts);
+    
 
     useEffect( () => {
         fetch('data.json')

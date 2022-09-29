@@ -10,7 +10,8 @@ const Cart = (props) => {
     for(const product of cart){
         total = total + product.time;
     }
-        const notify = () => toast("Wow Toastify part Done");
+    
+    const notify = () => toast("Wow Toastify part Done");
 
     const getLocalItems = () =>{
         let list = localStorage.getItem('list');
